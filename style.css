@@ -175,6 +175,8 @@ section {
 }
 
 .work-thumb {
+  position: relative;
+  overflow: hidden;
   height: 180px;
   display: flex;
   align-items: flex-end;
@@ -184,7 +186,17 @@ section {
 .thumb-pink { background: linear-gradient(160deg, var(--pink-deep), var(--pink)); }
 .thumb-blue { background: linear-gradient(160deg, var(--cyan-deep), var(--cyan)); }
 
+.work-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .work-tag {
+  position: relative;
+  z-index: 1;
   font-family: var(--font-mono);
   font-size: 0.78rem;
   background: var(--ink);
