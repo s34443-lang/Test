@@ -24,7 +24,7 @@ if (emailLink && copyHint) {
 
 function showCopied() {
   const originalText = copyHint.textContent;
-  copyHint.textContent = 'copied!';
+  copyHint.textContent = 'ก็อปแล้ว!';
   setTimeout(() => {
     copyHint.textContent = originalText;
   }, 1800);
